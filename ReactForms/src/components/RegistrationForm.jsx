@@ -1,8 +1,6 @@
-
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import './RegistrationForm.css';
-
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
@@ -45,44 +43,44 @@ const RegistrationForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label>First Name:</label>
         <input
           type="text"
           name="firstName"
+          placeholder="First Name"
           value={formData.firstName}
           onChange={handleChange}
         />
-        {errors.firstName && <span>{errors.firstName}</span>}
+        {errors.firstName && <span className="error">{errors.firstName}</span>}
       </div>
       <div>
-        <label>Last Name:</label>
         <input
           type="text"
           name="lastName"
+          placeholder="Last Name"
           value={formData.lastName}
           onChange={handleChange}
         />
-        {errors.lastName && <span>{errors.lastName}</span>}
+        {errors.lastName && <span className="error">{errors.lastName}</span>}
       </div>
       <div>
-        <label>Email:</label>
         <input
           type="email"
           name="email"
+          placeholder="Email"
           value={formData.email}
           onChange={handleChange}
         />
-        {errors.email && <span>{errors.email}</span>}
+        {errors.email && <span className="error">{errors.email}</span>}
       </div>
       <div>
-        <label>Contact:</label>
         <input
           type="text"
           name="contact"
+          placeholder="Contact Number"
           value={formData.contact}
           onChange={handleChange}
         />
-        {errors.contact && <span>{errors.contact}</span>}
+        {errors.contact && <span className="error">{errors.contact}</span>}
       </div>
       <button type="submit">Register</button>
     </form>
