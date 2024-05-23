@@ -1,44 +1,35 @@
 
 form {
-    width: 350px;
-    padding: 30px 20px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-  }
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
-  }
-  
-  input[type="text"],
-  input[type="email"] {
-    padding: 15px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    width: calc(100% - 20px);
-    box-sizing: border-box;
-    background-color: #ebebe0;
-  }
-  
-  span.error {
-    color: red;
+  width: 350px;
+  padding: 30px 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+  background-color: #ebebe0;
+}
+
+span.error {
+  color: red;
   font-size: 12px;
   display: block;
   margin-top: -15px;
   margin-bottom: 15px;
-  }
-  
-  button[type="submit"] {
-    background-color: #4CAF50;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
   color: white;
   padding: 15px 30px;
   border-radius: 0px;
   cursor: pointer;
   margin-top: 20px;
   width: 93%;
-  }
-  
-
-  
+}
